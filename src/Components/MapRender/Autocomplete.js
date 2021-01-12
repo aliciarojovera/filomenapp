@@ -1,5 +1,9 @@
 import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-autocomplete'
 import React from 'react'
+import {TextField, InputAdornment} from '@material-ui/core'
+import MapIcon from '@material-ui/icons/Map';
+import './Autocomplete.css'
+
 // Tutorial https://www.youtube.com/watch?v=uJYqQdnw8LE
 
 
@@ -21,20 +25,31 @@ const Autocomplete = ({ handler, defAddress }) => {
     return (
         <>
             <PlacesAutocomplete
+                className="AutoComplete"
                 value={address}
                 onChange={setAddress}
                 onSelect={handleSelect}>
                 {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
                     <div>
-                        <input className="form-control" {...getInputProps({ placeholder: defAddress ? defAddress : "Escribe la Dirección" })}
-                        >
+                        {/* <TextField className="form-control" {...getInputProps("Escribe la Dirección")}></TextField> */}
 
-                        </input>
+                    <TextField
+                    multiline
+                    className="AutoCompleteTextField"
+                    name="alertAddress"
+                    size="small"
+                    fullWidth={true}
+                    label="Dirección"
+                    placeholder="Dirección de la alerta"
+                    onChange={handler}
+                    InputProps={{startAdornment: (<InputAdornment position="start"><MapIcon/></InputAdornment>), ...getInputProps("Escribe la Dirección")}}
+                    />
                         <div>
                             {loading ? <div>...loading</div> : null}
                             {suggestions.map((suggestion, idx) => {
                                 const style = {
-                                    backgroundColor: suggestion.active ? "#41b6e6" : "#ffffff"
+                                    backgroundColor: suggestion.active ? "#41b6e6" : "#ffffff",
+                                    color: "blue"
                                 }
                                 return (
                                     <div {...getSuggestionItemProps(suggestion, { style })}
