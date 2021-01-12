@@ -5,9 +5,9 @@ import { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../../Context/AuthContext'
 import Installer from '../../Components/Installer/Installer'
-import PostAddIcon from '@material-ui/icons/PostAdd';
-import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
-import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
+// import PostAddIcon from '@material-ui/icons/PostAdd';
+// import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
+// import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import CreateIcon from '@material-ui/icons/Create';
 import { ThemeContext } from '../../Context/ThemeContext'
 import AcUnitIcon from '@material-ui/icons/AcUnit';

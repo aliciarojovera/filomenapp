@@ -4,7 +4,7 @@ import React from 'react'
 
 const LocalMarker = ({ text, handleClick }) => {
 
-    const [hovered, setHovered] = React.useState("")
+    const [, setHovered] = React.useState("")
 
     return (
         <>

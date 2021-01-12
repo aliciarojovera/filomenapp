@@ -11,7 +11,7 @@ const Landing = props => {
                 <div className="content">
                     <p>{props.msg}</p>
                     {props.github ?
-                        <> <a href="https://github.com/reneshibuya/filomenapp"><img className="github" src="https://github.githubassets.com/images/modules/logos_page/Octocat.png"></img></a><p className="small">Colabora en Github</p><br></br></>
+                        <> <a href="https://github.com/reneshibuya/filomenapp"><img alt="github" className="github" src="https://github.githubassets.com/images/modules/logos_page/Octocat.png"></img></a><p className="small">Colabora en Github</p><br></br></>
                         : ""}
                     <br></br>
 
