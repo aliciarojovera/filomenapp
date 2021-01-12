@@ -1,0 +1,108 @@
+.flex{
+    width: 90%;
+    margin:0 auto;
+
+}
+.imageCard{
+    max-width: 80%;
+    object-fit: cover;
+    display:block;
+    margin:0 auto;
+    margin-bottom: 15px;
+
+}
+
+.likes{
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color:rgba(0, 0, 0, 60%);
+
+}
+.likes p{
+    margin-left: 5px;
+}
+.flexlike{
+    display: flex;
+align-items: center;
+
+}
+.card{
+    border: 1px solid rgba(255, 255, 255, 0.242);
+    max-width: 600px;
+    margin:0 auto;
+        margin-bottom:20px;
+        background-color:rgba(0, 0, 0, 20%);
+        border-radius: 4px;
+
+}
+.profileData{
+    display: flex;
+    
+}
+.profileImg{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin:15px;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+
+}
+.date{
+    font-size: 13px;
+    margin:0
+}
+.triangle{
+    height: 0px;
+   width: 0px;
+   border-top:10px solid rgba(0, 0, 0, 0);
+   border-left: 24px solid rgba(0, 0, 0, 0);
+   border-right: 24px solid rgba(0, 0, 0, 0);
+  margin-right: 10px;
+  margin-top:10px
+}
+
+#high{
+       border-bottom: 38px solid #A62D2D;
+
+}
+
+#medium{
+       border-bottom: 38px solid #d97a3b;
+     
+
+}
+#low{
+       border-bottom: 38px solid #03658C;
+
+}
+.prueba{
+      margin-left: -5px;
+      margin-top:-15px;
+    color:white
+}
+ 
+.none{
+    display:none
+}
+.headerCard{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 700px){
+    .flex{
+        display: block;
+    }
+    .imageCard{
+    
+        max-height: 30%;
+        max-width: 90%;
+        margin-bottom:15px;
+
+    }
+    /* .headerCard{
+        display: block;
+    } */
+}

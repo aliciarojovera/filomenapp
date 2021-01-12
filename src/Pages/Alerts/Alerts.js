@@ -1,9 +1,10 @@
 import './Alerts.css'
-
+import AlertList from "../../Components/Alerts/AlertList"
 const Alerts = () => {
     return (
         <>
-            <h1>Im Alert</h1>
+            <h1 className="alertTitle">Alertas</h1>
+            <AlertList></AlertList>
         </>
     );
 }
