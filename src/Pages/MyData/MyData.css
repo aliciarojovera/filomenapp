@@ -1,0 +1,27 @@
+.mainDataForm{
+    margin:auto;
+    text-align: center;
+    width: 75%;
+    max-width: 400px;
+}
+
+.formOption{
+    font-size: 14px;
+}
+
+.invoiceDetailTitle{
+    margin-bottom:0px;
+}
+
+/* DARK MODE
+.Dark{
+    color: white;
+}
+
+.Dark div{
+    color: white;
+}
+
+.Dark label{
+    color: white;
+} */

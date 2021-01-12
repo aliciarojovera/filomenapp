@@ -1,0 +1,116 @@
+.tab {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    color: white;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-top: 4px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+  }
+  .tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: #2c3e50;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.35s;
+    /* Icon */
+  }
+  .tab-label:hover {
+    background: #FC466B;
+  }
+  .tab-label::after {
+    content: "❯";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: transform 0.35s;
+  }
+  .tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #2c3e50;
+    transition: all 0.35s;
+  }
+  
+  .tab-content.open{
+    max-height: 100vh;
+    padding: 1em;
+  }
+  
+  
+  .open.tab-label::after {
+      transform: rotate(90deg);
+  }
+  
+    /* Propios de Inv Card */
+  
+  .cardMainDiv{
+      width: fit-content;
+      margin: 0 auto;
+      font-size: 12px;
+      font-weight: bold;
+      color: black;
+  }
+
+  .cardMainDiv.Dark{
+    color:white;
+  }
+
+
+
+  .cardMainDiv td{
+    text-align: left;
+    padding: 5px;
+}
+
+.cardMainDiv th{
+  text-align: right;
+  padding: 5px;
+}
+  
+  .cardMainDiv label{
+      margin-top: 6px;
+  }
+  
+  .InvBtn{
+      margin-top:10px;
+  }
+  
+  .InvBtn .editBtn{
+  
+      color:white;
+      background-color: rgb(255, 182, 46);
+      width: 200px;
+  }
+  
+  .InvBtn .deleteBtn{
+      margin-top:10px;
+      color:white;
+      background-color: rgb(255, 46, 46);
+      width: 200px;
+  }
+  
+  .InvBtn .invoiceBtn{
+      margin-top:10px;
+      color:white;
+      background-color: rgb(46, 137, 255);
+      width: 200px;
+  }
+  
+  .InvBtn .editBtn:hover{
+      color:white;
+      background-color: #FC466B;
+  }
+  
+  .InvBtn .deleteBtn:hover{
+      color:white;
+      background-color: #FC466B;
+  }
+  
+  .InvBtn .invoiceBtn:hover{
+      color:white;
+      background-color: #FC466B;
+  }

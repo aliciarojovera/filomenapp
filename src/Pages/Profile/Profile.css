@@ -1,0 +1,65 @@
+.userPic {
+    object-fit: contain;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+
+.userPicDiv {
+    margin: 0 auto;
+    max-height: 250px;
+    max-width: 250px;
+    
+}
+
+.inputFile {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+
+.userPicFileDiv{
+    margin:0 auto;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.inputFile + label {
+        background: #FC466B;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        padding: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: all 0.3s;
+        vertical-align: middle;
+}
+
+.UserPicFileIcon{
+    margin-top:14px;
+    margin-right: 5px;
+}
+
+
+.LogoutBtnDiv{
+    position: absolute;
+    bottom: 80px; 
+    width: 75%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.LogoutBtn{
+    background-color: rgb(65, 175, 148);
+}

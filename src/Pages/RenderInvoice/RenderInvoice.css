@@ -1,0 +1,174 @@
+.invMainDiv{
+    width: 800px;
+    max-width: 800px;
+    height: 1131px;
+    max-height: 1131px;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.myDataDiv{
+    width: 400px;
+    height: 150px;
+    float: left;
+}
+
+.myDataField{
+    color:black;
+}
+
+.invDateField{
+    color:black;
+}
+
+.invTitleField{
+    color:black;
+}
+
+.invNumField{
+    color:black;
+}
+
+.clientDataField{
+    color:black;
+}
+.priceMainTable{
+    color:black;
+}
+
+.invMsgField{
+    color:black;
+}
+
+.conceptArray{
+    color:black;
+}
+
+.conceptArray td{
+    color:black;
+}
+
+.invDateDiv{
+    width: 400px;
+    height: 150px;
+    text-align: right;
+    float: right;
+}
+
+.invTitleDiv{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.invNumDiv{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.clientDataDiv{
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.conceptMainTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.conceptMainTable td, .conceptMainTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.conceptMainTable tr:nth-child(even){background-color: #f2f2f2;}
+
+.conceptMainTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4c95af;
+    color: white;
+}
+
+.priceMainTable {
+    border-collapse: collapse;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 110px;
+}
+
+.priceMainTable td, .priceMainTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.priceMainTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1e45639d;
+    color: white;
+}
+
+.priceMainTable td {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.priceMainTable .totalTotal {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1e4563;
+    color: white;
+}
+
+.invMsgDiv {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    border-radius: 4px;
+}
+
+#renderImg{
+    border: 1px solid black;
+    width: 99.4%;
+    max-width: 550px;
+    background-color: #1e4563;
+}
+
+.renderImgDiv{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonsDiv{
+    max-width: 650px;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.editBtn {
+    background-color: orange;
+}

@@ -1,0 +1,56 @@
+
+.tab2 {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    color: white;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-top: 4px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+  }
+.tab2-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: #FC466B;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.35s;
+    /* Icon */
+}
+.tab2-label:hover {
+    background: #f7204b;
+}
+.tab2-label::after {
+    content: "❯";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: transform 0.35s;
+}
+.tab2-content {
+    max-height: 0;
+    color: #2c3e50;
+    transition: all 0.35s;
+}
+
+.tab2-content.open{
+    max-height: 100vh;
+
+}
+
+
+.open.tab2-label::after {
+    transform: rotate(90deg);
+}
+
+.mainDataForm2{
+    margin: 0px 10px;
+}
+
+
+.mainDataForm2 label{
+    margin-top: 2px;
+}
+

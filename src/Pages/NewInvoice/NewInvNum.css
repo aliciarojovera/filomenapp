@@ -1,0 +1,38 @@
+.newInvNum {
+    background-color: rgba(69, 104, 135, 0.099);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.newInvNumTitle {
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    margin-top: 10px;
+}
+
+.newInvNum input{
+    padding: 8px;
+}
+
+.newInvNumIcon{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    bottom: 0;
+    margin-bottom: 5px;
+}
+
+.newInvLabel{
+    position: absolute;
+    right: 0;
+    margin-right: 35px;
+    bottom: 0;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
