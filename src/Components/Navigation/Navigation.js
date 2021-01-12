@@ -10,6 +10,9 @@ import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import CreateIcon from '@material-ui/icons/Create';
 import { ThemeContext } from '../../Context/ThemeContext'
+import AcUnitIcon from '@material-ui/icons/AcUnit';
+import AnnouncementIcon from '@material-ui/icons/Announcement';
+import ReportProblemIcon from '@material-ui/icons/ReportProblem';
 
 const Navigation = () => {
 
@@ -84,7 +87,7 @@ const Navigation = () => {
           <img src={Logo} width="40" height="40" style={{marginTop:"10px"}} alt="myAlt"></img>
         </Link>
 
-        <Link to={authCtx.auth.isUser ? "/mydata" : "/signin"} onClick={() => handleHideClick()}>
+        <Link to={authCtx.auth.isUser ? "/profile" : "/signin"} onClick={() => handleHideClick()}>
           <img 
           className="NavUserPic" 
           width="40"
@@ -101,7 +104,7 @@ const Navigation = () => {
       {/* <div className={burger.sidebar}> */}
       <div className={[burger.sidebar, Theme.Theme.isDark ? "Navbar Dark" : "Navbar"].join(" ")}>
 
-          <Link onClick={() => handleHideClick()} className="BarLink" to={authCtx.auth.isUser ? "/mydata" : "/signin"}>
+          <Link onClick={() => handleHideClick()} className="BarLink" to={authCtx.auth.isUser ? "/profile" : "/signin"}>
           <li>
           <img
                 src={authCtx.auth.isUser ? authCtx.auth.user.photoURL : NoUser}
@@ -116,10 +119,10 @@ const Navigation = () => {
           </Link>
 
         {/* LINKS */}
-        <Link onClick={() => handleHideClick()} className="BarLink" to="/newinvoice"><li><PostAddIcon className="BarIcon"/> Nueva Factura</li></Link>
-        <Link onClick={() => handleHideClick()} className="BarLink" to="/myinvoices"><li><LibraryBooksIcon className="BarIcon"/> Mis Facturas</li></Link>
-        <Link onClick={() => handleHideClick()} className="BarLink" to="/myclients"><li><PeopleAltIcon className="BarIcon"/> Mis Clientes</li></Link>
-        <Link onClick={() => handleHideClick()} className="BarLink" to="/mydata"><li><CreateIcon className="BarIcon"/> Mis Datos</li></Link>
+        <Link onClick={() => handleHideClick()} className="BarLink" to="/map"><li><AcUnitIcon className="BarIcon"/> MAPA DE HIELO</li></Link>
+        <Link onClick={() => handleHideClick()} className="BarLink" to="/alerts"><li><AnnouncementIcon className="BarIcon"/> ULTIMAS ALERTAS</li></Link>
+        <Link onClick={() => handleHideClick()} className="BarLink" to="/newalert"><li><ReportProblemIcon className="BarIcon"/> CREAR ALERTA</li></Link>
+        <Link onClick={() => handleHideClick()} className="BarLink" to="/profile"><li><CreateIcon className="BarIcon"/> Mis Datos</li></Link>
 
         {/* INSTALLER */}
           <Installer/>

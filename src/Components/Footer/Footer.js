@@ -9,7 +9,7 @@ const Footer = () => {
     return ( 
         <footer className={Theme.Theme.isDark ? "Dark" : ""}>
             <div className="mainFooterTitle">
-                © 2021 FACTURATOR
+                Madrid © 2021 FilomenApp es un proyecto independiente y sin ánimo de lucro
             </div>
         </footer>
     );
