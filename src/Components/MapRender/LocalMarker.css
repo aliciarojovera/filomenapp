@@ -1,0 +1,45 @@
+.localMarkerPic {
+    position: 'absolute'; 
+    transform: translate(-50%, -50%);
+    width: 30px;
+    object-fit: cover;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    transition: 0.2s;
+     z-index: -90!important;    
+}
+
+.localMarkerPic:hover {
+    position: 'absolute'; 
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 70px;
+    border-radius: 20px;
+     z-index: 99 !important 
+}
+
+.localMarkerTitle {
+    text-align: center;
+    position: 'absolute'; 
+    transform: translate(-50%, -150%);
+    width: 200px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.localHovered {
+    position: 'absolute'; 
+    background-color: #FE3C52;
+    font-size: 16px;
+    padding: 5px 20px;
+    color:white;
+    border-radius: 20px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    position: 'absolute'; 
+    transform: translate(-50%, -25px);
+    z-index: 999 !important;
+}

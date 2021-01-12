@@ -16,6 +16,9 @@ import ContactUs from '../ContactUs/ContactUs'
 import RenderInvoice from '../RenderInvoice/RenderInvoice'
 import { ThemeContext } from '../../Context/ThemeContext';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import NewAlert from '../NewAlert/NewAlert';
+import Alerts from '../Alerts/Alerts';
+import Map from '../Map/Map';
 
 function App() {
 
@@ -46,6 +49,11 @@ function App() {
                   <Route path="/profile">{authCtx.auth.isUser ? <Profile/> : <Redirect to="/signin"/>}</Route>
                   <Route path="/newinvoice">{authCtx.auth.isUser ? <NewInvoice/> : <Redirect to="/signin"/>}</Route>
                   <Route path="/myinvoices">{authCtx.auth.isUser ? <MyInvoices/> : <Redirect to="/signin"/>}</Route>
+
+                  <Route path="/newalert">{authCtx.auth.isUser ? <NewAlert/> : <Redirect to="/signin"/>}</Route>
+                  <Route path="/alerts"><Alerts/></Route>
+                  <Route path="/map">{authCtx.auth.isUser ? <Map/> : <Redirect to="/signin"/>}</Route>
+
                   <Route path="/myclients">{authCtx.auth.isUser ? <MyClients/> : <Redirect to="/signin"/>}</Route>
                   <Route path="/renderinvoice">{authCtx.auth.isUser ? <RenderInvoice/> : <Redirect to="/signin"/>}</Route>
                   <Route path="/contactus">{authCtx.auth.isUser ? <ContactUs/> : <Redirect to="/signin"/>}</Route>
