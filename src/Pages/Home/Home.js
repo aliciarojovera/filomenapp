@@ -15,9 +15,9 @@ const Home = () => {
     return ( 
         <>
             {app.app.firstTime && <FirstTime/>}
-            <Landing to="/newinvoice" hero="hero1" msg="La gestión de tus facturas, gratis y más fácil que nunca" btn="empezar ya" img={LandingImg1}/>
+            <Landing to="/newinvoice" hero="hero1" msg="Estado de tu zona, gratis y más fácil que nunca" btn="Reportar incidente" img="https://res.cloudinary.com/aliciarojo/image/upload/v1610479454/javygo-7KFmBUfzkUg-unsplash_2_jukg3l.jpg"/>
             <ThreeColumns/>
-            <Landing to="contactus" hero="hero1" msg="¿Necesitas esta tecnología para tu PYME o empresa?" btn="Contacta con nosotros" img={LandingImg2}/>
+            <Landing to="contactus" hero="hero1" msg="Este es un proyecto de código abierto" github="true" btn="Contacta con nosotros" img="https://res.cloudinary.com/aliciarojo/image/upload/v1610484175/tracy-adams-_4HiCxdOBLU-unsplash_1_tcbxwg.jpg" />
         </>
     );
 }

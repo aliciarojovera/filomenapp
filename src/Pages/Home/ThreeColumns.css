@@ -7,7 +7,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
+	
 }
 
 .pricing-box {
@@ -19,13 +20,16 @@
 	margin: 2%;
 	min-width: 250px;
     max-width: 350px;
-    background-color: rgba(255, 255, 255, 0.049);
+	background-color: rgba(255, 255, 255, 0.049);
+	
 }
 
 .price {
 	margin: 24px 0;
 	font-size: 36px;
 	font-weight: 900;
+	text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+
 }
 
 .price sub, .price sup {
@@ -36,6 +40,7 @@
 .features-list {
 	padding: 0;
 	list-style-type: none;
+	text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .features-list li {
@@ -66,10 +71,11 @@
 }
 
 .pricing-box-bg-image {
-	background-image: url('https://image.freepik.com/free-photo/dark-leather-desk-minimal-photographer-workspace-top-view-shot_67155-880.jpg');
     background-size: cover;
     background-position:top;
-    color: #ffffff;
+	color: #ffffff;
+	    background: linear-gradient(to bottom right, rgba(57, 67, 112, 0), rgb(0, 0, 0, 0.8));
+
 }
 
 .pricing-box-bg-image .features-list li {
@@ -79,6 +85,7 @@
 .pricing-box-bg-image .btn-primary {
 	background-color: #ffffff;
 	color: #000;
+	font-size: 1.1em;
 }
 
 .cuentanos {
